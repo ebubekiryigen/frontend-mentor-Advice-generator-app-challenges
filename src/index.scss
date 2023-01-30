@@ -1,0 +1,71 @@
+$cart-color :#313a49;
+$main-color :#72e9b4;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #202632;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.cart{
+  padding: 10px 20px;
+  background-color: $cart-color;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  border-radius: 10px;
+  &-text{
+    border-bottom: 1px solid gray;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &-title{
+      color: $main-color;
+    }
+    &-content{
+      color: #fff;
+      text-align: center;
+    }
+    &-play-button {
+      position: absolute;
+      bottom: -22px;
+      padding: 5px 5px;
+      z-index: 10;
+      cursor: pointer;
+      background-color: $cart-color;
+      color: #fff;
+    }
+  }
+  &-button{
+    position: absolute;
+    bottom: -22px;
+    span{
+      padding: 10px 10px;
+      background-color: $main-color;
+      border-radius: 100%;
+      cursor: pointer;
+      display: flex;
+    }
+  }
+}
